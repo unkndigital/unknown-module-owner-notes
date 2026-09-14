@@ -1,0 +1,30 @@
+{
+  "id": "owner-notes",
+  "version": "1.0.2",
+  "coreVersion": "0.4.6",
+  "home": false,
+  "inputs": [
+    {
+      "source": "LICENSE",
+      "target": "LICENSE"
+    },
+    {
+      "source": "MODULE.md",
+      "target": "README.md"
+    },
+    {
+      "source": "module.js",
+      "target": "module.js"
+    },
+    {
+      "source": "module.json",
+      "target": "module.json"
+    }
+  ],
+  "sourceFiles": [
+    "LICENSE",
+    "MODULE.md",
+    "module.js",
+    "module.json"
+  ]
+}
