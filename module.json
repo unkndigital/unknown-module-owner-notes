@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "owner-notes",
+  "version": "1.0.2",
+  "minCoreVersion": "0.4.6",
+  "title": "Owner Notes",
+  "description": "Local-only example module. Saves one note in its own private data directory; no TV settings or network access.",
+  "disableDescription": "Removes this example's activation marker and stops its actions. Your saved note stays in the module's data directory; turning the module off does not erase it.",
+  "publisher": "Unknown Digital and Unknown Suite contributors",
+  "license": "MIT",
+  "requiresRoot": true,
+  "entry": "module.js",
+  "permissions": ["Runs as root; the host does not enforce this module's declared scope", "Writes only its own note and activation marker; retains the note when disabled"],
+  "actions": {
+    "status": {"title": "Read note", "description": "Displays the note currently saved locally on this TV and whether this example module is active. Nothing is uploaded.", "readOnly": true, "parameters": {}},
+    "saveNote": {"title": "Save note", "description": "Replaces the one saved note with the text below. It stays local and is retained when the module is disabled.", "readOnly": false, "parameters": {"note": {"type": "string", "title": "Replacement note", "description": "Enter up to 500 characters. Saving replaces the previous note; it does not append another entry.", "maxLength": 500}}},
+    "clearNote": {"title": "Clear note", "description": "Erases the saved note. It does not disable the module or change any TV settings.", "confirmation": {"message": "Confirm deleting the saved note. This cannot be undone."}, "readOnly": false, "parameters": {}}
+  }
+}

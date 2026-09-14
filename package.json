@@ -1,0 +1,19 @@
+{
+  "name": "unknown-module-owner-notes",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Local-only example module. Saves one note in its own private data directory; no TV settings or network access.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node build.js --check",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "yauzl": "3.4.0",
+    "yazl": "3.3.1",
+    "acorn": "8.18.0"
+  }
+}
